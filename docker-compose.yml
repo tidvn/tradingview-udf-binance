@@ -1,9 +1,7 @@
-version: '3'
+version: '3.9'
 services:
   app:
     build: .
     ports:
-      - "8734:80"
-    volumes:
-      - .:/usr/src/app
+      - "8734:8080"
     command: ["node", "app.js"]
